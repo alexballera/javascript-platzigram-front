@@ -1,4 +1,5 @@
-import materialize from '../../node_modules/materialize-css/js/materialize.js'
+// import $ from 'jquery'
+// import materialize from '../../node_modules/materialize-css/dist/js/materialize.js'
 
 (() => {
   'use strict'
@@ -6,6 +7,5 @@ import materialize from '../../node_modules/materialize-css/js/materialize.js'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    materialize()
   }
 })()
