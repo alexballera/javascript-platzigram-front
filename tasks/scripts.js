@@ -16,6 +16,7 @@ gulp.task('scripts', () => {
   .bundle()
   .pipe(source('main.js'))
   .pipe(buffer())
+  .pipe(rename('index.js'))
   .pipe(gulp.dest('./build/scripts'))
   .pipe(uglify())
   .pipe(rename({ suffix: '.min' }))

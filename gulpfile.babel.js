@@ -7,8 +7,8 @@ sudo npm i -D materialize-css gulp babel-preset-latest babelify browser-sync bro
 
 */
 // Build
-gulp.task('build', ['copy'], () => {
-  gulp.start('build:html', 'styles', 'scripts', 'images', 'inject')
+gulp.task('build', ['copy', 'inject'], () => {
+  gulp.start('build:html', 'styles', 'scripts', 'images')
 })
 
 // Default

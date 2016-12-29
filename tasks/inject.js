@@ -5,7 +5,7 @@ gulp.task('inject', () => {
   gulp.src('./src/index.html')
     .pipe(inject(gulp.src([
       './src/styles/style.min.css',
-      './src/scripts/main.min.js'
+      './src/scripts/index.min.js'
     ],
       {
         read: false
