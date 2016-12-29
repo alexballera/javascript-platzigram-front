@@ -4,18 +4,10 @@ gulp.task('copy', () => {
   gulp.src('./src/index.html')
     .pipe(gulp.dest('./build'))
   gulp.src(['./src/fonts/**'])
+    .pipe(gulp.dest('./build/fonts'))
     .pipe(gulp.dest('./public/fonts'))
   gulp.src(['./src/scripts/vendors/**'])
     .pipe(gulp.dest('./public/scripts/vendors'))
-  gulp.src('./src/styles/fonts/fonts-mfizz/**/*.*')
-    .pipe(gulp.dest('./public/styles/fonts/fonts-mfizz'))
-    .pipe(gulp.dest('./build/styles/fonts/fonts-mfizz'))
-  gulp.src('./src/styles/fonts/flexslider/**/*.*')
-    .pipe(gulp.dest('./public/styles/fonts/flexslider'))
-    .pipe(gulp.dest('./build/styles/fonts/flexslider'))
-  gulp.src('./src/styles/fonts/fonts/**/*.*') // Comentar si se va a usar el cdnjs
-    .pipe(gulp.dest('./public/styles/fonts/fonts')) // Comentar si se va a usar el cdnjs
-    .pipe(gulp.dest('./build/styles/fonts/fonts'))
   gulp.src([
     './src/scripts/vendors/modernizr.js',
     './src/scripts/vendors/selectivizr.js'
