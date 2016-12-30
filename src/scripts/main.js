@@ -1,12 +1,11 @@
-// import $ from 'jquery'
-// import materialize from '../../node_modules/materialize-css/dist/js/materialize.js'
-import page from './lib/page'
+import index from './lib/index'
+
 (() => {
   'use strict'
 
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    page()
+    index()
   }
 })()
