@@ -1,8 +1,10 @@
 var express = require('express')
 var app = express()
 
+app.set('view engine', 'pug')
+
 app.get('/', (req, res) => {
-  res.send('Hola Mundo')
+  res.render('index')
 })
 
 app.listen(3000, (err) => {

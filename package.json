@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "dependencies": {
     "express": "^4.14.0",
-    "materialize-css": "^0.97.8"
+    "materialize-css": "^0.97.8",
+    "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
     "babel-preset-latest": "^6.16.0",
