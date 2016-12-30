@@ -14,6 +14,10 @@ gulp.task('scripts', () => {
   return browserify('./src/scripts/main.js')
   .transform(babelify, {presets})
   .bundle()
+  .on('error', (err) => {
+    console.log(err)
+    this.emit('end')
+  })
   .pipe(source('main.js'))
   .pipe(buffer())
   .pipe(rename('index.js'))

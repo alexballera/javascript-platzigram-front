@@ -1,4 +1,4 @@
-import index from './lib/index'
+import views from './lib/views'
 
 (() => {
   'use strict'
@@ -6,6 +6,6 @@ import index from './lib/index'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    index()
+    views()
   }
 })()

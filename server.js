@@ -14,6 +14,10 @@
    res.render('index')
  })
 
+ app.get('/landing', function(req, res) {
+   res.render('index')
+ })
+
  app.get('/signin', function(req, res) {
    res.render('index')
  })
