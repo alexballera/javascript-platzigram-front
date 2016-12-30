@@ -10,7 +10,7 @@ var box = yo`
         <h2>Regístrate para ver fotos de tus amigos</h2>
         <div class="section">
           <a href="" class="btn btn-fb hide-on-small-only waves-effect waves-light">Iniciar sesión con Facebook</a>
-          <a href="" class="btn btn-fb hide-on-med-and-up waves-effect waves-light">Iniciar sesión</a>
+          <a href="" class="btn btn-fb hide-on-med-and-up waves-effect waves-light"><i class="fa fa-facebook-official" aria-hidden="true"></i>Iniciar sesión</a>
         </div>
         <div class="divider"></div>
         <div class="section">
