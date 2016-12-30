@@ -8,4 +8,7 @@ sudo npm i -D materialize-css
 Agregar a **style.scss** para ser preprocesado con sass  
 ```css
 @import '../../../node_modules/materialize-css/sass/materialize';
-```
+```  
+
+Jade 2 HTML
+http://html2jade.org/

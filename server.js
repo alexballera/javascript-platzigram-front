@@ -1,14 +1,17 @@
-var express = require('express')
-var app = express()
+ var express = require('express')
 
-app.set('view engine', 'pug')
+ var app = express()
 
-app.get('/', (req, res) => {
-  res.render('index')
-})
+ app.set('view engine', 'pug')
 
-app.listen(3000, (err) => {
-  if (err) return console.log('Hubo en error'), process.exit(1)
+ app.use(express.static('public'))
 
-  console.log('Escuchando puerto 3000')
-})
+ app.get('/', function(req, res) {
+   res.render('index')
+ })
+
+ app.listen(3000, (err) => {
+   if(err) return console.log('Hubo un error'), process.exit(1)
+
+   console.log('Escuchando en el puerto 3000')
+ })
