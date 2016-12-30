@@ -1,4 +1,4 @@
-# Creando un Proyecto con materialize
+# Creando un Proyecto SPA
 
 ### Instalar  
 ```bash
@@ -10,5 +10,17 @@ Agregar a **style.scss** para ser preprocesado con sass
 @import '../../../node_modules/materialize-css/sass/materialize';
 ```  
 
-Jade 2 HTML
-http://html2jade.org/
+### Jade 2 HTML
+[http://html2jade.org/](http://html2jade.org/)
+
+### PageJS
+[https://visionmedia.github.io/page.js/](https://visionmedia.github.io/page.js/)
+
+### NPM scripts
+[https://docs.npmjs.com/misc/scripts](https://docs.npmjs.com/misc/scripts)
+
+### Yo Yo
+[https://www.npmjs.com/package/yo-yo](https://www.npmjs.com/package/yo-yo)
+
+### Empty Element
+[https://www.npmjs.com/package/empty-element](https://www.npmjs.com/package/empty-element)

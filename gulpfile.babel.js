@@ -2,7 +2,7 @@ import gulp from 'gulp'
 require('require-dir')('./tasks')
 
 /* Instalar las siguientes dependencias:
-sudo npm i -S pug materialize-css express
+sudo npm i -S pug materialize-css express yo-yo page pug empty-element
 sudo npm i -D gulp babel-preset-latest babelify browser-sync browserify del gulp-autoprefixer gulp-cache gulp-cssnano gulp-gh-pages gulp-htmlmin gulp-imagemin gulp-inject gulp-notify gulp-plumber gulp-rename gulp-sass gulp-sass-glob gulp-uglify gulp-uncss imagemin-jpegtran imagemin-optipng imagemin-pngquant imagemin-svgo jquery require-dir vinyl-buffer vinyl-source-stream
 
 */
