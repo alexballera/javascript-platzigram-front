@@ -8,4 +8,20 @@ html
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
     link(rel='stylesheet' href='styles/style.min.css')
   body
-    
+    section#main-container
+    footer.site-footer
+      .container
+        .row
+          .col.s12.l3.center-align
+            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+            ul#dropdown1.dropdown-content
+              li
+                a(href='#!') Español
+              li
+                a(href='#!') Inglés
+          .col.s12.l3.push-l6.center
+            i.fa.fa-copyright(aria-hidden='true')
+            |  2016 Platzigram
+      script(src='scripts/vendors/jquery.min.js')
+      script(src='scripts/vendors/materialize.min.js')
+      script(src='scripts/index.min.js')
