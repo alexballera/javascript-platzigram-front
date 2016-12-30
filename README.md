@@ -24,3 +24,6 @@ Agregar a **style.scss** para ser preprocesado con sass
 
 ### Empty Element
 [https://www.npmjs.com/package/empty-element](https://www.npmjs.com/package/empty-element)
+
+### Title
+[https://github.com/component/title](https://github.com/component/title)

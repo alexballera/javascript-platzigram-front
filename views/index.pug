@@ -1,27 +1,28 @@
 html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
-    meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    title(Practicas Javascript Con Materialize)
-    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Oleo+Script' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
-    link(rel='stylesheet' href='styles/style.min.css')
-  body
-    section#main-container
-    footer.site-footer
-      .container
-        .row
-          .col.s12.l3.center-align
-            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
-            ul#dropdown1.dropdown-content
-              li
-                a(href='#!') Español
-              li
-                a(href='#!') Inglés
-          .col.s12.l3.push-l6.center
-            i.fa.fa-copyright(aria-hidden='true')
-            |  2016 Platzigram
-      script(src='scripts/vendors/jquery.min.js')
-      script(src='scripts/vendors/materialize.min.js')
-      script(type='application/javascript' src='scripts/index.min.js')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Oleo+Script' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+        link(rel='stylesheet' href='styles/style.min.css')
+        title=title
+
+    body
+        section#main-container
+        footer.site-footer
+            .container
+                .row
+                    .col.s12.l3.center-align
+                        a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+                        ul#dropdown1.dropdown-content
+                            li
+                                a(href='#!') Español
+                            li
+                                a(href='#!') Inglés
+                    .col.s12.l3.push-l6.center
+                        i.fa.fa-copyright(aria-hidden='true')
+                        |  2016 Platzigram
+            script(src='scripts/vendors/jquery.min.js')
+            script(src='scripts/vendors/materialize.min.js')
+            script(type='application/javascript' src='scripts/index.min.js')
