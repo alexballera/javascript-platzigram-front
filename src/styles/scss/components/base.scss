@@ -48,6 +48,13 @@ body{
   color: $secondary-color;
   box-shadow: none;
   border-bottom: 1px solid #edeeee;
+  box-sizing: border-box;
+  height: 54px;
+  line-height: 54px;
+  .fa-user{
+    height: 54px;
+    line-height: 54px;
+  }
 }
 .timeline{
   padding: 30px 0;
