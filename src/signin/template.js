@@ -16,7 +16,7 @@ Iniciar sesión</a>
         <div class="section">
           <input type="text" name="username" placeholder="Nombre de usuario">
           <input type="password" name="password" placeholder="Contraseña">
-          <button class="btn waves-effect waves-light btn-signup" type="submit">Regístrate</button>
+          <button class="btn waves-effect waves-light btn-signup" type="submit">Iniciar Sesión</button>
         </div>
       </form>
     </div>
