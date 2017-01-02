@@ -31,4 +31,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Renderizar tiempo
 [http://momentjs.com/](http://momentjs.com/)
 
-### Terminado Video 18: Agregando funcionalidad like y dislike
+### Terminado Video 19: Agregando la fecha de publicacion
