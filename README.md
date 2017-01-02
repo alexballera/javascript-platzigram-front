@@ -41,4 +41,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ## Renderizando message con formatjs MessageFormat
 [https://github.com/yahoo/intl-messageformat](https://github.com/yahoo/intl-messageformat)
 
-### Terminado Video 19: Agregando la fecha de publicacion
+### Terminado Video 20: Utilizando FormatJS para internacionalizar los textos
