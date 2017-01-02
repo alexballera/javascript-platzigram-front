@@ -28,14 +28,14 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Title
 [https://github.com/component/title](https://github.com/component/title)
 
-### Renderizar tiempo
+### Renderizar tiempo con momentjs
 [http://momentjs.com/](http://momentjs.com/)
 
-### Intl
+### Renderizar con Intl
 [http://formatjs.io/](http://formatjs.io/)
 [https://www.npmjs.com/package/intl](https://www.npmjs.com/package/intl)
 
-## Intl RelativeFormat
+## Renderizando tiempo con Intl RelativeFormat
 [https://www.npmjs.com/package/intl-relativeformat](https://www.npmjs.com/package/intl-relativeformat)
 
 ### Terminado Video 19: Agregando la fecha de publicacion
