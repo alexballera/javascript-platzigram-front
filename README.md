@@ -28,4 +28,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Title
 [https://github.com/component/title](https://github.com/component/title)
 
-### Terminado Video 17: Agregando imágenes de los usuarios al timeline
+### Terminado Video 18: Agregando funcionalidad like y dislike
