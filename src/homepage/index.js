@@ -15,7 +15,7 @@ export default () => {
           avatar: 'https://en.gravatar.com/userimage/47902132/6c0627fea40f1121473a83983b792a26.jpg?size=200'
         },
         url: 'images/office.jpg',
-        likes: 10,
+        likes: 0,
         liked: false,
         createdAt: new Date()
       },
@@ -25,7 +25,7 @@ export default () => {
           avatar: 'https://en.gravatar.com/userimage/47902132/6c0627fea40f1121473a83983b792a26.jpg?size=200'
         },
         url: 'images/office.jpg',
-        likes: 24,
+        likes: 1,
         liked: true,
         createdAt: new Date().setDate(new Date().getDate() - 10)
       }

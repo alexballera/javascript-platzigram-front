@@ -31,11 +31,14 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Renderizar tiempo con momentjs
 [http://momentjs.com/](http://momentjs.com/)
 
-### Renderizar con Intl
+### Renderizar con formatjs
 [http://formatjs.io/](http://formatjs.io/)
 [https://www.npmjs.com/package/intl](https://www.npmjs.com/package/intl)
 
-## Renderizando tiempo con Intl RelativeFormat
+## Renderizando tiempo con formatjs RelativeFormat
 [https://www.npmjs.com/package/intl-relativeformat](https://www.npmjs.com/package/intl-relativeformat)
+
+## Renderizando message con formatjs MessageFormat
+[https://github.com/yahoo/intl-messageformat](https://github.com/yahoo/intl-messageformat)
 
 ### Terminado Video 19: Agregando la fecha de publicacion
