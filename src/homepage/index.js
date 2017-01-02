@@ -16,7 +16,7 @@ export default () => {
         },
         url: 'images/office.jpg',
         likes: 10,
-        liked: true
+        liked: false
       },
       {
         user: {
