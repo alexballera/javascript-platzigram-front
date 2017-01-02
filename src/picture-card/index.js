@@ -1,6 +1,19 @@
 import yo from 'yo-yo'
 import moment from 'moment'
 
+if (!window.Intl) {
+  window.Intl = require('intl')
+  require('intl/locale-data/jsonp/en-US.js')
+  require('intl/locale-data/jsonp/es.js')
+}
+
+var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat')
+
+require('intl-relativeformat/dist/locale-data/en.js')
+require('intl-relativeformat/dist/locale-data/es.js')
+
+var rf = new IntlRelativeFormat('es')
+
 module.exports = function pictureCard(pic) {
   var el
   function render(picture) {
@@ -14,7 +27,7 @@ module.exports = function pictureCard(pic) {
             <span class="username">${picture.user.username}</span>
           </a>
           <small class="right time">
-            ${moment(picture.createdAt).fromNow()}
+            ${(rf.format(picture.createdAt))}
           </small>
           <p>
             <a class="left" href="#" onclick=${like.bind(null, true)}>

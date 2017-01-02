@@ -10,6 +10,7 @@ gulp.task('watch', () => {
   './src/signin/*.js',
   './src/landing/*.js',
   './src/layout/*.js',
-  './src/picture-card/*.js'], ['scripts'])
+  './src/picture-card/*.js',
+  './src/translate/*.js'], ['scripts'])
   gulp.watch('./src/videos/**/*.*', ['images'])
 })
