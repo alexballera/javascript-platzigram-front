@@ -28,4 +28,7 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Title
 [https://github.com/component/title](https://github.com/component/title)
 
+### Renderizar tiempo
+[http://momentjs.com/](http://momentjs.com/)
+
 ### Terminado Video 18: Agregando funcionalidad like y dislike

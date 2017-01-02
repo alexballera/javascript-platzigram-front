@@ -16,7 +16,8 @@ export default () => {
         },
         url: 'images/office.jpg',
         likes: 10,
-        liked: false
+        liked: false,
+        createdAt: new Date()
       },
       {
         user: {
@@ -25,7 +26,8 @@ export default () => {
         },
         url: 'images/office.jpg',
         likes: 24,
-        liked: true
+        liked: true,
+        createdAt: new Date().setDate(new Date().getDate() - 10)
       }
     ]
     empty(main).appendChild(template(pictures))

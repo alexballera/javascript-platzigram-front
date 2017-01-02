@@ -1,4 +1,5 @@
 import yo from 'yo-yo'
+import moment from 'moment'
 
 module.exports = function pictureCard(pic) {
   var el
@@ -12,7 +13,9 @@ module.exports = function pictureCard(pic) {
             <img src="${picture.user.avatar}" class="avatar" />
             <span class="username">${picture.user.username}</span>
           </a>
-          <small class="right time">Hace un día</small>
+          <small class="right time">
+            ${moment(picture.createdAt).fromNow()}
+          </small>
           <p>
             <a class="left" href="#" onclick=${like.bind(null, true)}>
               <i class="fa fa-heart-o" aria-hidden="true"></i>
