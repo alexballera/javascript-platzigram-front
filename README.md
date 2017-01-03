@@ -47,4 +47,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Superagent
 [https://github.com/visionmedia/superagent](https://github.com/visionmedia/superagent)
 
-## Terminado Video 21: Cambinado el idioma y almacenandolo en localStorage
+## Terminado Video 22: "Obteniendo respuesta del servidor con Superagent"
