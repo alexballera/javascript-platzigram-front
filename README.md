@@ -43,4 +43,8 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Renderizando message con formatjs MessageFormat
 [https://github.com/yahoo/intl-messageformat](https://github.com/yahoo/intl-messageformat)
 
+## AJAX
+### Superagent
+[https://github.com/visionmedia/superagent](https://github.com/visionmedia/superagent)
+
 ## Terminado Video 21: Cambinado el idioma y almacenandolo en localStorage

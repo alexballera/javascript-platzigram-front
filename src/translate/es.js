@@ -1,5 +1,5 @@
 module.exports = {
-  likes: '{likes, number} me gusta',
+  'likes': '{likes, number} me gusta',
   'logout': 'Salir',
   'english': 'Inglés',
   'spanish': 'Español',

@@ -1,25 +1,53 @@
- var express = require('express')
+var express = require('express')
 
- var app = express()
+var app = express()
 
- app.set('view engine', 'pug')
+app.set('view engine', 'pug')
 
- app.use(express.static('public'))
+app.use(express.static('public'))
 
- app.get('/', function(req, res) {
-   res.render('index', {title: 'Platzigram'})
- })
+app.get('/', (req, res) => {
+ res.render('index', {title: 'Platzigram'})
+})
 
- app.get('/signup', function(req, res) {
-   res.render('index', {title: 'Platzigram - Signup'})
- })
+app.get('/signup', (req, res) => {
+ res.render('index', {title: 'Platzigram - Signup'})
+})
 
- app.get('/signin', function(req, res) {
-   res.render('index', {title: 'Platzigram - Signin'})
- })
+app.get('/signin', (req, res) => {
+ res.render('index', {title: 'Platzigram - Signin'})
+})
 
- app.listen(3000, (err) => {
-   if(err) return console.log('Hubo un error'), process.exit(1)
+app.get('/api/pictures', (req, res) => {
+  var pictures = [
+    {
+      user: {
+        username: 'alexballera',
+        avatar: 'https://en.gravatar.com/userimage/47902132/6c0627fea40f1121473a83983b792a26.jpg?size=200'
+      },
+      url: 'images/office.jpg',
+      likes: 0,
+      liked: false
+      // createdAt: new Date()
+    },
+    {
+      user: {
+        username: 'alexballera',
+        avatar: 'https://en.gravatar.com/userimage/47902132/6c0627fea40f1121473a83983b792a26.jpg?size=200'
+      },
+      url: 'images/office.jpg',
+      likes: 1,
+      liked: true
+      // createdAt: new Date().setDate(new Date().getDate() - 10)
+    }
+  ]
+  setTimeout(() => {
+    res.send(pictures)
+  }, 2000)
+})
 
-   console.log('Escuchando en el puerto 3000')
- })
+app.listen(3000, (err) => {
+ if(err) return console.log('Hubo un error'), process.exit(1)
+
+ console.log('Escuchando en el puerto 3000')
+})

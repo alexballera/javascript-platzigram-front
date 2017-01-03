@@ -19,7 +19,7 @@ MESSAGES['en-US'] = en
 var locale = localStorage.locale || 'es'
 
 module.exports = {
-  message: function (text, opts) {
+  message: (text, opts) => {
     opts = opts || {}
     let msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null)
     return msg.format(opts)

@@ -7,7 +7,7 @@ var main = document.getElementById('main-container')
 
 export default () => {
   page('/signup', (ctx, next) => {
-    title('Platzigram - Signup')    
+    title('Platzigram - Signup')
     empty(main).appendChild(template)
   })
 }
