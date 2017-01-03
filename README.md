@@ -64,4 +64,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### File Extension
 [https://www.npmjs.com/package/file-extension](https://www.npmjs.com/package/file-extension)
 
-## "Terminado video 26 Agregado boton para subir nueva foto"
+## "Terminado video 27 Subiendo una imagen a nuestro servidor"
