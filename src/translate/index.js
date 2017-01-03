@@ -12,12 +12,11 @@ var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeforma
 require('intl-relativeformat/dist/locale-data/en.js')
 require('intl-relativeformat/dist/locale-data/es.js')
 
-var MESSAGES = {},
-locale = 'en-US'
-
+var MESSAGES = {}
 MESSAGES.es = es
 MESSAGES['en-US'] = en
 
+var locale = localStorage.locale || 'es'
 
 module.exports = {
   message: function (text, opts) {
