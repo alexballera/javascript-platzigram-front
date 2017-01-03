@@ -7,8 +7,6 @@ import signup from '../signup'
 import homepage from '../homepage'
 import footer from '../footer'
 
-// https://visionmedia.github.io/page.js/
-
 (() => {
   'use strict'
 
@@ -20,7 +18,6 @@ import footer from '../footer'
     signup()
     homepage()
     footer()
-
     page()
   }
 })()
