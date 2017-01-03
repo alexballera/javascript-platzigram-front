@@ -50,4 +50,7 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### Axios
 [https://github.com/mzabriskie/axios](https://github.com/mzabriskie/axios)
 
-## Terminado Video 23: "Obteniendo respuesta del servidor con Axios"
+### Fetch
+[https://github.com/github/fetch](https://github.com/github/fetch)
+
+## "Terminado video 24 Obteniendo respuesta del servidor con Fetch"
