@@ -13,7 +13,7 @@ require('intl-relativeformat/dist/locale-data/en.js')
 require('intl-relativeformat/dist/locale-data/es.js')
 
 var MESSAGES = {},
-locale = 'es'
+locale = 'en-US'
 
 MESSAGES.es = es
 MESSAGES['en-US'] = en
