@@ -1,13 +1,14 @@
 import yo from 'yo-yo'
 import layout from '../layout'
 import picture from '../picture-card'
+import request from 'superagent'
 var translate = require('../translate').message
 
 module.exports = (pictures) => {
   var el = yo`<div class="container timeline">
     <div class="row">
       <div class="col s12 m10 offset-m1 l8 offset-l2 center-align">
-        <form id="formUpload" enctype="multipart/form-data" class="form-upload">
+        <form id="formUpload" enctype="multipart/form-data" class="form-upload" onsubmit=${onsubmit}>
           <div id="fileName" class="fileUpload btn btn-flat cyan">
             <span><i class="fa fa-camera" aria-hidden="true"></i>${translate('upload-picture')}</span>
             <input name="picture" id="file" type="file" class="upload" onchange=${onChange}/>
@@ -40,6 +41,18 @@ module.exports = (pictures) => {
     function cancel() {
       toggleButtons()
       document.getElementById('formUpload').reset()
+    }
+
+    function onsubmit(ev) {
+      ev.preventDefault()
+      var data = new FormData(this)
+      request
+        .post('/api/pictures')
+        .send(data)
+        .set('Accept', 'application/json')
+        .end(function(err, res) {
+          console.log(arguments)
+        })
     }
 
     return layout(el)

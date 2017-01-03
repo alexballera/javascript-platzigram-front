@@ -58,4 +58,10 @@ Agregar a **style.scss** para ser preprocesado con sass
 [https://www.npmjs.com/package/babel-plugin-transform-regenerator](https://www.npmjs.com/package/babel-plugin-transform-regenerator)
 [https://babeljs.io/docs/usage/polyfill/](https://babeljs.io/docs/usage/polyfill/)
 
+## Subiendo datos al servidor con multer
+[https://www.npmjs.com/package/multer](https://www.npmjs.com/package/multer)
+
+### File Extension
+[https://www.npmjs.com/package/file-extension](https://www.npmjs.com/package/file-extension)
+
 ## "Terminado video 26 Agregado boton para subir nueva foto"
