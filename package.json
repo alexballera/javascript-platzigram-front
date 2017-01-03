@@ -4,6 +4,7 @@
   "description": "Proyecto de práctica de Jvascript utilizando Materialize",
   "main": "gulpfile.babel.js",
   "dependencies": {
+    "axios": "^0.15.3",
     "empty-element": "^1.0.0",
     "express": "^4.14.0",
     "intl": "^1.2.5",
