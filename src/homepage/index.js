@@ -7,7 +7,7 @@ import request from 'superagent'
 import axios from 'axios'
 
 export default () => {
-  page('/', header, loadPicturesAxios, (ctx, next) => {
+  page('/', header, loadPicturesFetch, (ctx, next) => {
     title('Platzigram')
     var main = document.getElementById('main-container')
     empty(main).appendChild(template(ctx.pictures))
@@ -26,6 +26,17 @@ export default () => {
       .get('/api/pictures')
       .then((res) => {
         ctx.pictures = res.data
+        next()
+      })
+      .catch((err) => console.log(err))
+  }
+  function loadPicturesFetch(ctx, next) {
+    fetch('/api/pictures')
+      .then((res) => {
+        return res.json()
+      })
+      .then((pictures) => {
+        ctx.pictures = pictures
         next()
       })
       .catch((err) => console.log(err))
