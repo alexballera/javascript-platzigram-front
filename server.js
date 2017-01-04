@@ -66,6 +66,45 @@ app.post('/api/pictures', (req, res) => {
   })
 })
 
+app.get('/api/user/:username', (req, res) => {
+  const user = {
+    username: 'alexballera',
+    avatar: 'https://en.gravatar.com/userimage/47902132/6c0627fea40f1121473a83983b792a26.jpg?size=200',
+    pictures: [
+      {
+        id: 1,
+        src: 'https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/13739563_1269019793110712_358274010_n.jpg',
+        likes: 3
+      },
+      {
+        id: 2,
+        src: 'https://ig-s-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/13774473_1176976522343399_1216847652_n.jpg',
+        likes: 5
+      },
+      {
+        id: 3,
+        src: 'https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/13628249_1729827633932473_2101470748_n.jpg',
+        likes: 10
+      },
+      {
+        id: 4,
+        src: 'https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/13735893_181845118895323_139405802_n.jpg',
+        likes: 8
+      },
+      {
+        id: 5,
+        src: 'https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/13744959_886716394773555_1283437724_n.jpg',
+        likes: 12
+      }
+    ]
+  }
+  res.send(user)
+})
+
+app.get('/:username', (req, res) => {
+  res.render('index', {title: `Platzigram - ${req.params.username}`})
+})
+
 app.listen(3000, (err) => {
  if(err) return console.log('Hubo un error'), process.exit(1)
 
