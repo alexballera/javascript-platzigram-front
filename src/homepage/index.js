@@ -6,12 +6,20 @@ import header from '../header'
 import request from 'superagent'
 import axios from 'axios'
 
+var main = document.getElementById('main-container')
+
 export default () => {
-  page('/', header, asyncLoad, (ctx, next) => {
+  page('/', header, loading, asyncLoad, (ctx, next) => {
     title('Platzigram')
-    var main = document.getElementById('main-container')
     empty(main).appendChild(template(ctx.pictures))
   })
+
+  function loading(ctx, next) {
+    var el = document.createElement('div')
+    el.classList.add('loader')
+    main.appendChild(el)
+    next()
+  }
   // Superagent
   function loadPictures(ctx, next) {
     request

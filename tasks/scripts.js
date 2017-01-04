@@ -8,7 +8,13 @@ import rename from 'gulp-rename'
 
 gulp.task('scripts', () => {
   return browserify('./src/scripts/main.js')
-  .transform(babelify, {presets: ['latest'], plugins: ['syntax-async-functions', 'transform-regenerator']})
+  .transform(babelify, {
+    presets: ['latest'],
+    plugins: [
+      'syntax-async-functions',
+      'transform-regenerator'
+    ]
+  })
   .bundle()
   .on('error', (err) => {
     console.log(err)

@@ -138,19 +138,25 @@ $avatar-size: 48px;
   position: relative;
   .picture{
     width: 100%;
-    &:hover{
-      filter: blur(1px);
-    }
   }
   .likes{
+    display: none;
     position: absolute;
     top: 50%;
     z-index: 2;
     left: 45%;
     font-size: 2rem;
-    color: red;
+    color: #c62828;
     i{
       margin-right: 10px;
+    }
+  }
+  &:hover{
+    .picture{
+      filter: blur(2px);
+    }
+    .likes{
+      display: block;
     }
   }
 }
