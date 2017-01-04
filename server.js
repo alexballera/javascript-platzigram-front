@@ -54,7 +54,7 @@ app.get('/api/pictures', (req, res) => {
   ]
   setTimeout(() => {
     res.send(pictures)
-  }, 2000)
+  }, 100)
 })
 
 app.post('/api/pictures', (req, res) => {

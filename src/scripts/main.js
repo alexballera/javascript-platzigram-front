@@ -5,6 +5,7 @@ import moment from 'moment'
 import signin from '../signin'
 import signup from '../signup'
 import homepage from '../homepage'
+import userpage from '../userpage'
 import footer from '../footer'
 
 (() => {
@@ -17,6 +18,7 @@ import footer from '../footer'
     signin()
     signup()
     homepage()
+    userpage()
     footer()
     page()
   }
