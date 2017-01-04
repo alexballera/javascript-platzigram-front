@@ -64,4 +64,4 @@ Agregar a **style.scss** para ser preprocesado con sass
 ### File Extension
 [https://www.npmjs.com/package/file-extension](https://www.npmjs.com/package/file-extension)
 
-## "Terminado stream 1 Agregada vista de usuario"
+## "Terminado stream 2 Agregado Snniper"
