@@ -134,3 +134,23 @@ $avatar-size: 48px;
     }
   }
 }
+.picture-container{
+  position: relative;
+  .picture{
+    width: 100%;
+    &:hover{
+      filter: blur(1px);
+    }
+  }
+  .likes{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 45%;
+    font-size: 2rem;
+    color: red;
+    i{
+      margin-right: 10px;
+    }
+  }
+}
