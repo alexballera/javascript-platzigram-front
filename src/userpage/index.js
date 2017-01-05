@@ -8,8 +8,25 @@ var main = document.getElementById('main-container')
 
 export default () => {
   page('/:username', header, loadUser, (ctx, next) => {
-    title(`Platzigram - ${ctx.params.user}`)
+    title(`Platzigram - ${ctx.user.username}`)
     empty(main).appendChild(template(ctx.user))
+    $(`#modal${ctx.params.id}`).modal({// No funciona!!!
+      complete: () => {
+        page(`/${ctx.params.username}`)
+      }
+    })
+    // $('.materialboxed').materialbox()
+  })
+
+  page('/:username/:id', header, loadUser, (ctx, next) => {
+    title(`Platzigram - ${ctx.user.username}`)
+    empty(main).appendChild(template(ctx.user))
+    $(`#modal${ctx.params.id}`).modal({// No funciona!!!
+      complete: () => {
+        page(`/${ctx.params.username}`)
+      }
+    })
+    // $('.materialboxed').materialbox()
   })
 
   async function loadUser (ctx, next) {
