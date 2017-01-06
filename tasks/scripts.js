@@ -6,15 +6,10 @@ import uglify from 'gulp-uglify'
 import babelify from 'babelify'
 import rename from 'gulp-rename'
 
+// Agregado presets y plugins en .babelrc
 gulp.task('scripts', () => {
   return browserify('./src/scripts/main.js')
-  .transform(babelify, {
-    presets: ['latest'],
-    plugins: [
-      'syntax-async-functions',
-      'transform-regenerator'
-    ]
-  })
+  .transform(babelify)
   .bundle()
   .on('error', (err) => {
     console.log(err)

@@ -1,6 +1,6 @@
 {
-  presets: ["latest"],
-  plugins: [
+  "presets": ["latest"],
+  "plugins": [
     "syntax-async-functions",
     "transform-regenerator"
   ]
