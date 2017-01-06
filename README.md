@@ -1,4 +1,4 @@
-# Creando un Proyecto SPA
+# Práctica de Javascript: Creando una APP Tipo Instagram - FrontEnd
 
 [https://github.com/platzi/platzigram](https://github.com/platzi/platzigram)
 
