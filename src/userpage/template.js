@@ -21,16 +21,17 @@ export default (user) => {
         ${user.pictures.map(function(picture) {
           return yo`
           <div class="col s12 m6 l4">
-            <a href="/${user.username}/${picture.id}" class="picture-container">
+            <a href="/${user.username}/${picture.id}" data-target="modal${picture.id}" class="modal-trigger picture-container">
               <img src="${picture.src}" class="picture">
               <div class="likes"><i class="fa fa-heart"></i>${picture.likes}</div>
             </a>
             <div id="modal${picture.id}" class="modal modal-fixed-footer">
-              <div class="modal-content">
+              <div class="modal-content center">
                 <img src="${picture.src}">
               </div>
               <div class="modal-footer">
                 <div class="btn btn-flat likes">
+                  <p>Aqui estoy</p>
                   <i class="fa fa-heart"></i> ${translate.message('likes', { likes: picture.likes} )}
                 </div>
               </div>

@@ -1,22 +1,24 @@
 import page from 'page'
-import header from '../header'
+import template from './template'
 import title from 'title'
 import empty from 'empty-element'
-import template from './template'
+import header from '../header'
 
 var main = document.getElementById('main-container')
 
 export default () => {
-  page('/:username', header, loadUser, (ctx, next) => {
+  page('/:username', loadUser, header, (ctx, next) => {
     title(`Platzigram - ${ctx.user.username}`)
     empty(main).appendChild(template(ctx.user))
     // $('.materialboxed').materialbox()
   })
 
-  page('/:username/:id', header, loadUser, (ctx, next) => {
+  page('/:username/:id', loadUser, header, (ctx, next) => {
     title(`Platzigram - ${ctx.user.username}`)
     empty(main).appendChild(template(ctx.user))
-    $(`#modal${ctx.params.id}`).modal({// No funciona!!!
+    $('.modal').modal({// No funciona!!!
+      // ready: (modal, trigger) => {
+      // },
       complete: () => {
         page(`/${ctx.params.username}`)
       }

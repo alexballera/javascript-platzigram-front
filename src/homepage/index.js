@@ -5,6 +5,7 @@ import title from 'title'
 import header from '../header'
 import request from 'superagent'
 import axios from 'axios'
+import Webcam from 'webcamjs'
 
 var main = document.getElementById('main-container')
 
@@ -12,6 +13,25 @@ export default () => {
   page('/', header, loading, asyncLoad, (ctx, next) => {
     title('Platzigram')
     empty(main).appendChild(template(ctx.pictures))
+    $('.modal').modal({
+      ready: (modal, trigger) => {
+        Webcam.set({
+              width: 'auto',
+              height: 'auto',
+              dest_width: 'auto',
+              dest_height: 'auto',
+              image_format: 'jpeg',
+              jpeg_quality: 90,
+              force_flash: false,
+              flip_horiz: true,
+              fps: 45
+          })
+        Webcam.attach('#camara-input')
+      },
+      complete: () => {
+        Webcam.reset()
+      }
+    })
   })
 
   function loading(ctx, next) {
