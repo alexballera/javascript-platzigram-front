@@ -16,10 +16,10 @@ export default () => {
     $('.modal').modal({
       ready: (modal, trigger) => {
         Webcam.set({
-              width: 'auto',
-              height: 'auto',
-              dest_width: 'auto',
-              dest_height: 'auto',
+              width: 320,
+              height: 240,
+              dest_width: 640,
+              dest_height: 480,
               image_format: 'jpeg',
               jpeg_quality: 90,
               force_flash: false,

@@ -12,7 +12,7 @@ module.exports = (pictures) => {
       </div>
     </div>
     <div class="modal-footer">
-      <button class="waves-effect waves-light btn" id="shoot">
+      <button class="waves-effect waves-light btn boton-camara" id="shoot">
         <i class="fa fa-camera"></i>
       </button>
     </div>
