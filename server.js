@@ -38,8 +38,8 @@ app.get('/api/pictures', (req, res) => {
       },
       url: 'images/office.jpg',
       likes: 0,
-      liked: false
-      // createdAt: new Date()
+      liked: false,
+      createdAt: new Date().getTime()
     },
     {
       user: {
@@ -48,8 +48,8 @@ app.get('/api/pictures', (req, res) => {
       },
       url: 'images/office.jpg',
       likes: 1,
-      liked: true
-      // createdAt: new Date().setDate(new Date().getDate() - 10)
+      liked: true,
+      createdAt: new Date().setDate(new Date().getDate() - 10)
     }
   ]
   setTimeout(() => res.send(pictures), 300)
